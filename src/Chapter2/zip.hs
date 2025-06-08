@@ -17,3 +17,13 @@ bmiTell bmi
  | bmi <= 25.0 = "You're supposedly normal. Pffft, I bet you're ugly!"
  | bmi <= 30.0 = "You're fat! Lose some weight, fatty"
  | otherwise = "You're a whale, congratulations!"
+
+
+bmiTell' weight height
+ | (bmiCalculator weight height) <= 18.5 = "You're underweight, you emo, you!"
+ | (bmiCalculator weight height) <= 25.0 = "You're supposedly normal. Pffft, I bet you're ugly!"
+ | (bmiCalculator weight height) <= 30.0 = "You're fat! Lose some weight, fatty"
+ | otherwise = "You're a whale, congratulations!"
+
+
+bmiCalculator weight height = weight / (height ^ 2)
