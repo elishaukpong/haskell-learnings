@@ -31,3 +31,6 @@ bmiCalculator weight height = weight / (height ^ 2)
 tickle x y = z * t
     where z = x
           t = y
+
+repeat' 0 _ = []
+repeat' n x = x : repeat' (n - 1) x
