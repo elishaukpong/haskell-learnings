@@ -27,3 +27,7 @@ bmiTell' weight height
 
 
 bmiCalculator weight height = weight / (height ^ 2)
+
+tickle x y = z * t
+    where z = x
+          t = y
